@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — SoleForge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+  <style>
+    h1, .brand-font {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+    }
+
+    @media (min-width: 768px) {
+      h1 { font-size: 3rem; }
+    }
+
+    .form-card-wrapper {
+      position: relative;
+    }
+
+    .form-card {
+      position: relative;
+      z-index: 2;
+    }
+
+    .blob {
+      position: absolute;
+      z-index: 1;
+      filter: blur(0px);
+    }
+
+    .blob-pink {
+      background: #d6336c;
+      width: 200px;
+      height: 200px;
+      right: -40px;
+      bottom: -40px;
+      border-radius: 20%;
+      opacity: 0.5;
+    }
+
+    .blob-blue {
+      background: #186fc0;
+      width: 120px;
+      height: 120px;
+      left: -30px;
+      top: -30px;
+      border-radius: 50px;
+      opacity: 0.5;
+    }
+
+    .blob-orange {
+      background: #e8590c;
+      width: 90px;
+      height: 90px;
+      right: 40px;
+      top: -20px;
+      border-radius: 30%;
+      opacity: 0.5;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #78350f;
+    }
+  </style>
+</head>
+
+<body class="bg-[#FDF6E3] overflow-x-hidden">
+
+  <header class="flex justify-between px-4 sm:px-6 md:px-10 lg:px-40 py-6 text-amber-900 items-center" data-aos="fade-down" data-aos-duration="600">
+    <div class="logo text-xl font-bold brand-font">SoleForge</div>
+    <nav class="hidden md:block">
+      <ul class="flex gap-4 lg:gap-8 font-semibold items-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="flex gap-2">
+          <button type="button" class="py-2 px-4 cursor-pointer">Log in</button>
+          <button type="button" class="border-2 border-amber-900 py-2 px-6 rounded-lg cursor-pointer">Sign up
+            now</button>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="md:hidden border-2 border-amber-900 py-2 px-4 rounded-lg cursor-pointer text-sm">
+      Sign up now
+    </button>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="relative overflow-hidden">
+    <div class="relative z-10 max-w-3xl mx-auto text-center px-6 py-16 md:py-24" data-aos="fade-up">
+      <p class="uppercase tracking-widest text-sm font-semibold text-amber-800 mb-3">Get in touch</p>
+      <h1 class="font-bold mb-4">We're here to help</h1>
+      <p class="text-gray-700">
+        Order questions, authentication concerns, seller support, or just want to talk sneakers — send us a
+        note and we'll get back to you within one business day.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT CHANNELS ============ -->
+  <section class="py-4 md:py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16 px-6 lg:px-10 w-full lg:w-7xl mx-auto">
+      <div data-aos="fade-up">
+        <span class="text-4xl text-amber-900"><i class="fa-solid fa-envelope"></i></span>
+        <h4 class="font-bold text-lg mt-4 mb-2">Email us</h4>
+        <p class="text-sm text-gray-700 mb-2">For order help, disputes, or general questions.</p>
+        <p class="text-amber-900 font-semibold text-sm hover:underline cursor-pointer">support@soleforge.com</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <span class="text-4xl text-amber-900"><i class="fa-solid fa-comment-dots"></i></span>
+        <h4 class="font-bold text-lg mt-4 mb-2">Live chat</h4>
+        <p class="text-sm text-gray-700 mb-2">Chat with our team, Monday to Friday, 9am–6pm ET.</p>
+        <p  class="text-amber-900 font-semibold text-sm hover:underline cursor-pointer">Start a chat</a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <span class="text-4xl text-amber-900"><i class="fa-solid fa-location-dot"></i></span>
+        <h4 class="font-bold text-lg mt-4 mb-2">Visit us</h4>
+        <p class="text-sm text-gray-700 mb-2">Our authentication studio and showroom.</p>
+        <span class="text-amber-900 font-semibold text-sm cursor-pointer">Rimuru City, Jura Great Forest, Tempest Federation, Central Jura</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT FORM ============ -->
+  <section class="py-12 md:py-20">
+    <div class="w-full lg:w-6xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-10 items-start">
+
+        <!-- Side copy -->
+        <div class="space-y-6 lg:sticky lg:top-20" data-aos="fade-right">
+          <h2 class="text-3xl md:text-4xl font-bold">Send us a message</h2>
+          <p class="text-gray-700">
+            Tell us what's going on and pick the topic that fits best — it helps route your message to the right
+            person faster.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex gap-3 items-center">
+              <span class="text-green-600"><i class="fa-solid fa-check"></i></span>
+              Average first response in under 24 hours
+            </li>
+            <li class="flex gap-3 items-center">
+              <span class="text-green-600"><i class="fa-solid fa-check"></i></span>
+              Order and authentication updates included
+            </li>
+            <li class="flex gap-3 items-center">
+              <span class="text-green-600"><i class="fa-solid fa-check"></i></span>
+              Real people, no bots on the other end
+            </li>
+          </ul>
+        </div>
+
+        <!-- Form card -->
+        <div class="form-card-wrapper" data-aos="fade-left">
+          <div class="blob blob-pink"></div>
+          <div class="blob blob-blue"></div>
+          <div class="blob blob-orange"></div>
+          <form class="form-card bg-white rounded-2xl shadow-xl p-6 sm:p-10 space-y-5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-gray-800 mb-2">Full name</label>
+                <input type="text" id="name" name="name" placeholder="Jordan Ade"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:border-2 transition" />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold text-gray-800 mb-2">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:border-2 transition" />
+              </div>
+            </div>
+
+            <div>
+              <label for="topic" class="block text-sm font-semibold text-gray-800 mb-2">Topic</label>
+              <select id="topic" name="topic"
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm bg-white focus:border-2 transition">
+                <option>Order support</option>
+                <option>Authentication question</option>
+                <option>Selling on SoleForge</option>
+                <option>Account &amp; billing</option>
+                <option>Press &amp; partnerships</option>
+                <option>Something else</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-semibold text-gray-800 mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help?"
+                class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:border-2 transition resize-none"></textarea>
+            </div>
+
+            <button type="button"
+              class="w-full flex items-center justify-center gap-3 bg-amber-900 hover:bg-amber-800 transition text-white font-semibold py-3.5 rounded-lg cursor-pointer">
+              Send message
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ TEASER ============ -->
+  <section class="relative py-16 md:py-20 bg-gray-900 text-white overflow-hidden">
+    <div class="relative z-10 w-full lg:w-6xl mx-auto px-6 lg:px-10 text-center" data-aos="zoom-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Looking for a faster answer?</h2>
+      <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
+        Most questions about shipping times, authentication, and payouts are already answered in our help center.
+      </p>
+      <button type="button" class="border-2 border-white py-3 px-8 rounded-lg font-semibold cursor-pointer">
+        Visit Help Center
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="w-full lg:w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mb-16">
+
+        <div class="space-y-4">
+          <h4 class="font-semibold text-gray-300">Product</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="" class="hover:text-white">Pricing</a></li>
+            <li><a href="" class="hover:text-white">Overview</a></li>
+            <li><a href="" class="hover:text-white">Browse</a></li>
+            <li><a href="" class="hover:text-white">Accessibility</a></li>
+            <li><a href="" class="hover:text-white">Five</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-semibold text-gray-300">Solutions</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="" class="hover:text-white">Brainstorming</a></li>
+            <li><a href="" class="hover:text-white">Ideation</a></li>
+            <li><a href="" class="hover:text-white">Wireframing</a></li>
+            <li><a href="" class="hover:text-white">Research</a></li>
+            <li><a href="" class="hover:text-white">Design</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-semibold text-gray-300">Support</h4>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+            <li><a href="" class="hover:text-white">Developers</a></li>
+            <li><a href="" class="hover:text-white">Documentation</a></li>
+            <li><a href="" class="hover:text-white">Integrations</a></li>
+            <li><a href="" class="hover:text-white">Reports</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h4 class="font-semibold text-gray-300">Get the App</h4>
+          <div class="flex flex-col gap-3">
+            <a href="" class="inline-block">
+              <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store" class="h-10" />
+            </a>
+            <a href="" class="inline-block">
+              <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Get it on Google Play" class="h-10" />
+            </a>
+          </div>
+          <h4 class="font-semibold text-gray-300 pt-2">Follow Us</h4>
+          <div class="flex gap-4 text-lg">
+            <a href="" class="hover:text-gray-300"><i class="fa-brands fa-youtube"></i></a>
+            <a href="" class="hover:text-gray-300"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="hover:text-gray-300"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="hover:text-gray-300"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="hover:text-gray-300"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div
+        class="border-t border-gray-700 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+        <p>SoleForge &nbsp; &copy; 2026. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="terms.html" class="hover:text-white">Terms</a>
+          <a href="privacy.html" class="hover:text-white">Privacy</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+          <span class="flex items-center gap-1">
+            <i class="fa-solid fa-globe"></i> EN
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true, offset: 80 });
+  </script>
+</body>
+
+</html>
